@@ -1,0 +1,9 @@
+<templateSet group="Hiren">
+  <template name="benchmark" value="const start$ID$ = new Date().getTime();&#10;&#10;$SELECTION$&#10;&#10;const end$ID$ = new Date().getTime();&#10;const time$ID$ = end$ID$ - start$ID$;&#10;console.log(`*****$FN_NAME$ $ID$ time taken: ${time$ID$}`);" toReformat="false" toShortenFQNames="true">
+    <variable name="ID" expression="groovyScript(&quot;Math.abs(new Random().nextInt() % ([1000] - [1])) + [1]&quot;)" defaultValue="" alwaysStopAt="false" />
+    <variable name="FN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
